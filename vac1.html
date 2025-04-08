@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mes vacances à Toronto</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.3/brython.min.js"></script>
+</head>
+<body onload="brython()">
+    <header>
+        <div class="container">
+            <h1>Mes vacances à Toronto</h1>
+            <nav>
+                <ul>
+                    <li><a href="#nourriture">La nourriture</a></li>
+                    <li><a href="#monuments">Les monuments</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="skyline_toronto.jpg" alt="Toronto Skyline">
+            <div class="hero-overlay">
+                <h2>Bienvenue à Toronto</h2>
+                <p>Découvrez les merveilles de cette ville incroyable</p>
+            </div>
+        </section>
+        <section id="nourriture" class="content">
+            <div class="container">
+                <h2>La nourriture</h2>
+                <p>Toronto est connue pour sa diversité culinaire. Vous pouvez y trouver des plats du monde entier, des food trucks aux restaurants gastronomiques.</p>
+                <div class="food-gallery">
+                    <img src="nourriture_1.jpg" alt="Nourriture 1">
+                    <img src="nourriture_2.jpg" alt="Nourriture 2">
+                    <img src="nourriture_3.jpg" alt="Nourriture 3">
+                    <img src="nourriture_4.jpg" alt="Nourriture 4">
+                    <img src="nourriture_5.jpg" alt="Nourriture 5">
+                    <img src="poutine.jpg" alt="Nourriture 6">
+                    <img src="queu_de_castor.jpg" alt="Nourriture 7">
+                </div>
+            </div>
+        </section>
+        <section id="monuments" class="content">
+            <div class="container">
+                <h3>Les monuments</h3>
+                <p>Toronto regorge de monuments emblématiques comme la Tour CN, le Musée royal de l'Ontario et la Casa Loma.</p>
+                <div class="monuments-gallery">
+                    <img src="monument_1.jpg" alt="Monument 1">
+                    <img src="monument_2.jpg" alt="Monument 2">
+                    <img src="monument_3.jpg" alt="Monument 3">
+                    <img src="monument_4.jpg" alt="Monument 4">
+                    <img src="monument_5.jpg" alt="Monument 5">
+                    <img src="monument_5.jpg" alt="Monument 5">
+                </div>
+            </div>
+        </section>
+        <section id="activites" class="content">
+            <div class="container">
+                <h3>Activités</h3>
+                <p>Toronto offre une multitude d'activités pour tous les goûts : musées, parcs, sports, et bien plus encore.</p>
+                <div class="activities-list">
+                    <div class="activity">
+                        <h4>Musées</h4>
+                        <p>Visitez le Musée royal de l'Ontario, l'Art Gallery of Ontario, et bien d'autres.</p>
+                    </div>
+                    <div class="activity">
+                        <h4>Parcs</h4>
+                        <p>Promenez-vous dans High Park, le plus grand parc de Toronto.</p>
+                    </div>
+                    <div class="activity">
+                        <h4>Sports</h4>
+                        <p>Assistez à un match de hockey des Maple Leafs ou de basketball des Raptors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="galerie" class="content">
+            <div class="container">
+                <h3>Galerie</h3>
+                <div class="image-gallery">
+                    <img src="Toronto_basket.jpg" alt="Image 1">
+                    <img src="Toronto_baseball.webp" alt="Image 2">
+                    <img src="gallery_1.jpg" alt="Image 3">
+                    <img src="gallery_2.jpg" alt="Image 4">
+                    <img src="gallery_3.jpg" alt="Image 5">
+                    <img src="gallery_4.jpg" alt="Image 6">
+                    <img src="gallery_5.jpg" alt="Image 7">
+                    <img src="gallery_6.jpg" alt="Image 8">
+                    <img src="gallery_7.jpg" alt="Image 9">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Mes vacances à Toronto. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <button id="monBouton">Afficher l'image</button>
+    <img id="monImage" src="20250221_133111.jpg" alt="Image" style="display: none;">
+    <script type="text/python">
+        from browser import document
+
+        def afficher_image6(event):
+            try:
+                image = document["monImage"]
+                image.style.display = "block"
+                image.src = "20250221_133111.jpg"  # Corrected line
+
+            except KeyError as e:
+                print(f"Erreur: L'élément avec l'ID '{e}' n'a pas été trouvé.")
+
+        bouton = document["monBouton"]
+        if bouton:
+            bouton.bind("click", afficher_image6)
+        else:
+            print("Erreur: Le bouton avec l'ID 'monBouton' n'a pas été trouvé.")
+    </script>
+</body>
+</html>
