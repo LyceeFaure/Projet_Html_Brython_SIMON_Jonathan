@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mes vacances à Toronto</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.3/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython_stdlib.js"></script>
+</head>
+<body onload="brython()">
+    <header>
+        <div class="container">
+            <h1 id="page-title">Mes vacances à Toronto</h1>
+            <nav>
+                <ul>
+                    <li><a href="#nourriture" id="food-link">La nourriture</a></li>
+                    <li><a href="#monuments" id="monuments-link">Les monuments</a></li>
+                    <li><a href="#activites" id="activities-link">Activités</a></li>
+                    <li><a href="#galerie" id="gallery-link">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button class="lang-button" id="lang-button">♾️</button>
+    <main>
+        <section class="hero">
+            <img src="skyline_toronto.jpg" alt="Toronto Skyline">
+            <div class="hero-overlay">
+                <h2 id="welcome-title">Bienvenue à Toronto</h2>
+                <p id="welcome-text">Découvrez les merveilles de cette ville incroyable</p>
+            </div>
+        </section>
+        <section id="nourriture" class="content">
+            <div class="container">
+                <h2 id="food-title">La nourriture</h2>
+                <p id="food-description">Toronto est connue pour sa diversité culinaire. Vous pouvez y trouver des plats du monde entier, des food trucks aux restaurants gastronomiques.</p>
+                <div class="food-gallery">
+                    <div class="container">
+                        <img src="nourriture_1.jpg" alt="Nourriture 1">
+                        <button class="monBouton" data-src="nourriture_1.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="nourriture_2.jpg" alt="Nourriture 2">
+                        <button class="monBouton" data-src="nourriture_2.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="nourriture_3.jpg" alt="Nourriture 3">
+                        <button class="monBouton" data-src="nourriture_3.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="nourriture_4.jpg" alt="Nourriture 4">
+                        <button class="monBouton" data-src="nourriture_4.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="nourriture_5.jpg" alt="Nourriture 5">
+                        <button class="monBouton" data-src="nourriture_5.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="poutine.jpg" alt="Nourriture 6">
+                        <button class="monBouton" data-src="poutine.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="queu_de_castor.jpg" alt="Nourriture 7">
+                        <button class="monBouton" data-src="queu_de_castor.jpg">Afficher l'image</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="monuments" class="content">
+            <div class="container">
+                <h3 id="monuments-title">Les monuments</h3>
+                <p id="monuments-description">Toronto regorge de monuments emblématiques comme la Tour CN, le Musée royal de l'Ontario et la Casa Loma.</p>
+                <div class="monuments-gallery">
+                    <div class="container">
+                        <img src="monument_1.jpg" alt="Monument 1">
+                        <button class="monBouton" data-src="monument_1.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="monument_2.jpg" alt="Monument 2">
+                        <button class="monBouton" data-src="monument_2.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="monument_3.jpg" alt="Monument 3">
+                        <button class="monBouton" data-src="monument_3.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="monument_4.jpg" alt="Monument 4">
+                        <button class="monBouton" data-src="monument_4.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="monument_5.jpg" alt="Monument 5">
+                        <button class="monBouton" data-src="monument_5.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="monument_5.jpg" alt="Monument 5">
+                        <button class="monBouton" data-src="monument_5.jpg">Afficher l'image</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="activites" class="content">
+            <div class="container">
+                <h3 id="activities-title">Activités</h3>
+                <p id="activities-description">Toronto offre une multitude d'activités pour tous les goûts : musées, parcs, sports, et bien plus encore.</p>
+                <div class="activities-list">
+                    <div class="activity">
+                        <h4 id="museums-title">Musées</h4>
+                        <p id="museums-description">Visitez le Musée royal de l'Ontario, l'Art Gallery of Ontario, et bien d'autres.</p>
+                    </div>
+                    <div class="activity">
+                        <h4 id="parks-title">Parcs</h4>
+                        <p id="parks-description">Promenez-vous dans High Park, le plus grand parc de Toronto.</p>
+                    </div>
+                    <div class="activity">
+                        <h4 id="sports-title">Sports</h4>
+                        <p id="sports-description">Assistez à un match de hockey des Maple Leafs ou de basketball des Raptors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="galerie" class="content">
+            <div class="container">
+                <h3 id="gallery-title">Galerie</h3>
+                <div class="image-gallery">
+                    <div class="container">
+                        <img src="Toronto_basket.jpg" alt="Image 1">
+                        <button class="monBouton" data-src="Toronto_basket.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="Toronto_baseball.webp" alt="Image 2">
+                        <button class="monBouton" data-src="Toronto_baseball.webp">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_1.jpg" alt="Image 3">
+                        <button class="monBouton" data-src="gallery_1.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_2.jpg" alt="Image 4">
+                        <button class="monBouton" data-src="gallery_2.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_3.jpg" alt="Image 5">
+                        <button class="monBouton" data-src="gallery_3.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_4.jpg" alt="Image 6">
+                        <button class="monBouton" data-src="gallery_4.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_5.jpg" alt="Image 7">
+                        <button class="monBouton" data-src="gallery_5.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_6.jpg" alt="Image 8">
+                        <button class="monBouton" data-src="gallery_6.jpg">Afficher l'image</button>
+                    </div>
+                    <div class="container">
+                        <img src="gallery_7.jpg" alt="Image 9">
+                        <button class="monBouton" data-src="gallery_7.jpg">Afficher l'image</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2025 - Mes vacances à Toronto. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <div class="fullscreen-image" id="fullscreen-image" style="display: none;">
+        <button class="close-button" id="close-button">X</button>
+        <img id="fullscreen-img" src="" alt="Image plein écran">
+    </div>
+    <script type="text/python">
+        from browser import document, html
+
+        # Dictionnaires de traduction
+        translations = {
+            "page-title": {"fr": "Mes vacances à Toronto", "en": "My trip to Toronto"},
+            "food-link": {"fr": "La nourriture", "en": "Food"},
+            "monuments-link": {"fr": "Les monuments", "en": "Monuments"},
+            "activities-link": {"fr": "Activités", "en": "Activities"},
+            "gallery-link": {"fr": "Galerie", "en": "Gallery"},
+            "welcome-title": {"fr": "Bienvenue à Toronto", "en": "Welcome to Toronto"},
+            "welcome-text": {"fr": "Découvrez les merveilles de cette ville incroyable", "en": "Discover the wonders of this incredible city"},
+            "food-title": {"fr": "La nourriture", "en": "Food"},
+            "food-description": {"fr": "Toronto est connue pour sa diversité culinaire. Vous pouvez y trouver des plats du monde entier, des food trucks aux restaurants gastronomiques.", "en": "Toronto is known for its culinary diversity. You can find dishes from all over the world, from food trucks to fine dining restaurants."},
+            "monuments-title": {"fr": "Les monuments", "en": "Monuments"},
+            "monuments-description": {"fr": "Toronto regorge de monuments emblématiques comme la Tour CN, le Musée royal de l'Ontario et la Casa Loma.", "en": "Toronto is full of iconic monuments such as the CN Tower, the Royal Ontario Museum, and Casa Loma."},
+            "activities-title": {"fr": "Activités", "en": "Activities"},
+            "activities-description": {"fr": "Toronto offre une multitude d'activités pour tous les goûts : musées, parcs, sports, et bien plus encore.", "en": "Toronto offers a multitude of activities for all tastes: museums, parks, sports, and much more."},
+            "museums-title": {"fr": "Musées", "en": "Museums"},
+            "museums-description": {"fr": "Visitez le Musée royal de l'Ontario, l'Art Gallery of Ontario, et bien d'autres.", "en": "Visit the Royal Ontario Museum, the Art Gallery of Ontario, and many more."},
+            "parks-title": {"fr": "Parcs", "en": "Parks"},
+            "parks-description": {"fr": "Promenez-vous dans High Park, le plus grand parc de Toronto.", "en": "Stroll through High Park, the largest park in Toronto."},
+            "sports-title": {"fr": "Sports", "en": "Sports"},
+            "sports-description": {"fr": "Assistez à un match de hockey des Maple Leafs ou de basketball des Raptors.", "en": "Attend a hockey game of the Maple Leafs or a basketball game of the Raptors."},
+            "gallery-title": {"fr": "Galerie", "en": "Gallery"},
+            "footer-text": {"fr": "&copy; 2025 - Mes vacances à Toronto. Tous droits réservés.", "en": "&copy; 2025 - My trip to Toronto. All rights reserved."}
+        }
+
+        current_language = "fr"
+
+        def change_language(event):
+            global current_language
+            if current_language == "fr":
+                current_language = "en"
+                document["lang-button"].text = src"flag-france_1f1eb-1f1f7"
+            else:
+                current_language = "fr"
+                document["lang-button"].text = src"Flag_of_the_United_Kingdom_(3-5).svg"
+            update_texts()
+
+        def update_texts():
+            for element_id, texts in translations.items():
+                document[element_id].text = texts[current_language]
+
+        def afficher_image(event):
+            src = event.target.attrs["data-src"]
+            fullscreen_img = document["fullscreen-img"]
+            fullscreen_img.attrs["src"] = src
+            document["fullscreen-image"].style.display = "flex"
+
+        def fermer_image(event):
+            document["fullscreen-image"].style.display = "none"
+
+        for bouton in document.select(".monBouton"):
+            bouton.bind("click", afficher_image)
+
+        close_button = document["close-button"]
+        close_button.bind("click", fermer_image)
+
+        lang_button = document["lang-button"]
+        lang_button.bind("click", change_language)
+
+        update_texts()
+    </script>
+</body>
+</html>
