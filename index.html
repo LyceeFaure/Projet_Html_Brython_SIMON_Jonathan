@@ -174,8 +174,6 @@
     </div>
     <script type="text/python">
         from browser import document, html
-
-        # Dictionnaires de traduction
         translations = {
             "page-title": {"fr": "Mes vacances à Toronto", "en": "My trip to Toronto"},
             "food-link": {"fr": "La nourriture", "en": "Food"},
@@ -206,10 +204,10 @@
             global current_language
             if current_language == "fr":
                 current_language = "en"
-                document["lang-button"].text = src"flag-france_1f1eb-1f1f7"
+                document["lang-button"].text = "🇫🇷"
             else:
                 current_language = "fr"
-                document["lang-button"].text = src"Flag_of_the_United_Kingdom_(3-5).svg"
+                document["lang-button"].text = "🇬🇧"
             update_texts()
 
         def update_texts():
